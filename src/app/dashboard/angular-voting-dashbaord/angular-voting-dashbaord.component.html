@@ -1,0 +1,11 @@
+<div *ngIf="options.series[0].data && options.series[0].data.length && mongoError === null">
+  <h1 [innerText]="title"></h1>
+  <br />
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="options"
+    [(update)]="updateFlag"  
+  >
+
+  </highcharts-chart>
+</div>
